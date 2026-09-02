@@ -1,84 +1,206 @@
 <!DOCTYPE html>
-<html lang="sq">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Denio's Junk Removal & Dumpster Rental</title>
+    <title>Denios Junk Removal & Dumpster Delivery | Clifton NJ</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- Header / Navbar -->
-    <header class="header">
-        <div class="container nav-container">
-            <h1 class="logo">DENIO'S <span>JUNK REMOVAL</span></h1>
-            <div class="contact-top">
-                <i class="fa-solid fa-phone"></i>
-                <span>Na telefononi: <a href="tel:2017550535">201-755-0535</a></span>
+    <!-- Top Utility Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="search-box">
+                <input type="text" placeholder="book online or instant quote tool">
+                <button>🔍</button>
             </div>
+            <div class="top-contact">
+                <a href="tel:8005550199" class="top-phone">📞 Call Now 800-555-0199</a>
+                <a href="#kontakt" class="top-book">Book Online</a>
+                <span class="user-icon">D</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header & Navigation -->
+    <header>
+        <div class="container nav-container">
+            <div class="logo">
+                DENIOS <span>Junk Removal</span>
+            </div>
+            <nav class="main-nav">
+                <a href="#">Home</a>
+                <a href="#">Services</a>
+                <a href="#">Pricing</a>
+                <a href="#">Service Area</a>
+                <a href="#">About Us</a>
+                <a href="#">Blog</a>
+                <a href="#">FAQ</a>
+                <a href="#">Contact</a>
+                <a href="#">Careers</a>
+            </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
         <div class="container hero-content">
-            <h2>Pastrim Profesional i Mbeturinave & Qira Kontejnerësh në NJ</h2>
-            <p>Shërbim i shpejtë, i sigurt dhe i pastër për shtëpi, magazina dhe biznese. Ne bëjmë gjithë punën e rëndë për ju!</p>
-            <div class="hero-buttons">
-                <a href="#kontakt" class="btn btn-primary">Merr Një Preventiv Falas</a>
-                <a href="tel:2017550535" class="btn btn-secondary"><i class="fa-solid fa-phone"></i> 201-755-0535</a>
+            <div class="hero-text">
+                <h1>Instant Junk Removal, <br>Same Day Service</h1>
+                <p>Denios makes it easy. Clear pricing, insured, and eco-friendly disposal.</p>
+                <div class="hero-btns">
+                    <a href="#kontakt" class="btn-primary">Get Instant Quote</a>
+                    <a href="#kontakt" class="btn-secondary">Book Online</a>
+                </div>
+                <div class="hero-review">
+                    ⭐ <em>"Fast, professional, and eco-conscious. Highly recommended!"</em> <br>- Sarah J.
+                </div>
+            </div>
+            <div class="hero-img-box">
+                <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80" alt="Denios Truck">
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section class="services container">
-        <h2 class="section-title">Shërbimet Tona</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <i class="fa-solid fa-truck-pickup"></i>
-                <h3>Pastrim shtëpish & podrumesh</h3>
-                <p>Largojmë orenditë e vjetra, kutitë dhe mbeturinat nga bodrumet, papafot dhe dhomat tuaja.</p>
+    <!-- How It Works Section -->
+    <section class="how-section container">
+        <h2>How It Works</h2>
+        <div class="steps-grid">
+            <div class="step-box">
+                <h3>Book Online or Call</h3>
+                <p>Schedule your appointment instantly.</p>
             </div>
-            <div class="service-card">
-                <i class="fa-solid fa-dumpster"></i>
-                <h3>Qira Kontejnerësh (Dumpster)</h3>
-                <p>Zgjidhje perfekte për rinovime, ndërtime ose pastrime të mëdha oborresh.</p>
+            <div class="step-box">
+                <h3>We Arrive & Load</h3>
+                <p>Our team collects your items.</p>
             </div>
-            <div class="service-card">
-                <i class="fa-solid fa-building"></i>
-                <h3>Pastrim Magazinash & Zyrash</h3>
-                <p>Pastrim i shpejtë dhe efikas për hapësira komerciale dhe industriale.</p>
+            <div class="step-box">
+                <h3>Eco-Friendly Disposal</h3>
+                <p>We sort, recycle, and donate responsibly.</p>
             </div>
         </div>
     </section>
 
-    <!-- Contact Form Section -->
-    <section id="kontakt" class="contact-section">
-        <div class="container contact-container">
-            <h2>Na Kontaktoni për Preventiv Falas</h2>
-            <p>Plotësoni formularin ose na telefononi direkt për t'ju ndihmuar menjëherë.</p>
-            <form class="contact-form">
-                <div class="form-group">
-                    <input type="text" placeholder="Emri juaj" required>
+    <!-- Content Split: Services & Pricing Table -->
+    <section class="main-body-grid container">
+        <!-- Left Column: Services -->
+        <div class="services-column">
+            <h2>Services</h2>
+            <div class="services-grid-small">
+                <div class="srv-card">
+                    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=300&q=80" alt="Residential">
+                    <h4>Residential Junk Removal</h4>
+                    <a href="#">Learn More</a>
                 </div>
-                <div class="form-group">
-                    <input type="tel" placeholder="Numri i telefonit" required>
+                <div class="srv-card">
+                    <img src="https://images.unsplash.com/photo-1541888946425-d0fbb1868666?auto=format&fit=crop&w=300&q=80" alt="Construction">
+                    <h4>Construction Debris Removal</h4>
+                    <a href="#">Learn More</a>
                 </div>
-                <div class="form-group">
-                    <textarea rows="4" placeholder="Çfarë mbeturinash dëshironi të largoni?" required></textarea>
+                <div class="srv-card">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=300&q=80" alt="Office">
+                    <h4>Office Cleanouts</h4>
+                    <a href="#">Learn More</a>
                 </div>
-                <button type="submit" class="btn btn-primary">Dërgo Kërkesën</button>
-            </form>
+                <div class="srv-card">
+                    <img src="https://images.unsplash.com/photo-1558904541-efa8c4a45e2c?auto=format&fit=crop&w=300&q=80" alt="Yard">
+                    <h4>Yard Waste Removal</h4>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column: Transparent Pricing Table -->
+        <div class="pricing-column">
+            <h2>Transparent Pricing</h2>
+            <table class="price-table">
+                <thead>
+                    <tr>
+                        <th>Load Size</th>
+                        <th>Volume (Cubic Yards)</th>
+                        <th>Price Range</th>
+                        <th>What's Included</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1/4 Truck</td>
+                        <td>Total</td>
+                        <td>$2500 - $150</td>
+                        <td>Price</td>
+                    </tr>
+                    <tr>
+                        <td>1/4 Truck</td>
+                        <td>15,000</td>
+                        <td>$1560 - $350</td>
+                        <td>Price</td>
+                    </tr>
+                    <tr>
+                        <td>1/2 Truck</td>
+                        <td>12,900</td>
+                        <td>$3600 - $750</td>
+                        <td>Price</td>
+                    </tr>
+                    <tr>
+                        <td>1/2 Truck</td>
+                        <td>23,468</td>
+                        <td>$3500 - $750</td>
+                        <td>Blesh</td>
+                    </tr>
+                    <tr>
+                        <td>Full Truck</td>
+                        <td>$8.35M</td>
+                        <td>$3950 - $250</td>
+                        <td>Senssh</td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href="#" class="btn-full-price">View Full Price List</a>
+        </div>
+    </section>
+
+    <!-- Bottom Section: Service Area & About Us -->
+    <section class="bottom-split container">
+        <div class="service-area-box">
+            <h2>Service Area</h2>
+            <div class="map-placeholder">
+                <p>📍 <strong>Denios HQ</strong><br>Serving the Greater Tri-State Area, including NJ</p>
+            </div>
+        </div>
+        <div class="about-box">
+            <h2>About Us</h2>
+            <p><strong>Our Story: Committed to Community & Environment.</strong></p>
+            <a href="#">Read More</a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <div class="container footer-content">
-            <p>&copy; 2026 Denio's Junk Removal. Të gjitha të drejtat e rezervuara.</p>
-            <p>Adresa: 112 Hutton Rd, Clifton, NJ 07013 | Tel: 201-755-0535</p>
+    <footer id="kontakt">
+        <div class="container footer-flex">
+            <div>
+                <p><strong>DENIOS Junk Removal</strong></p>
+                <p>112 Hutton Rd, Clifton NJ, 07013</p>
+                <p>📞 800 256 0199</p>
+                <p>✉️ service@denioshd.com</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <a href="#">Home</a><br>
+                <a href="#">Services</a><br>
+                <a href="#">About Us</a><br>
+                <a href="#">Blog</a>
+            </div>
+            <div>
+                <a href="#" class="btn-primary">Book Online</a>
+            </div>
+            <div>
+                <p><strong>Subscribe for Tips & Updates</strong></p>
+                <input type="email" placeholder="Subscribe for Tips & Updates">
+            </div>
+        </div>
+        <div class="footer-copy">
+            <p>&copy; 2026 Denios. All Rights Reserved. My Privacy & Legal | Eco-Friendly Disposal.</p>
         </div>
     </footer>
 
