@@ -1,12 +1,3 @@
-:root {
-    --primary-green: #2e7d32;
-    --dark-green: #1b5e20;
-    --light-green: #e8f5e9;
-    --text-dark: #222;
-    --bg-light: #f8f9fa;
-    --accent-yellow: #f59e0b;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -15,24 +6,23 @@
 }
 
 body {
-    background-color: var(--bg-light);
-    color: var(--text-dark);
+    background-color: #f4f7f6;
+    color: #333;
     line-height: 1.6;
 }
 
 .container {
     width: 90%;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
-header {
-    background: #fff;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+/* Header */
+.header {
+    background: #1b263b;
+    color: #fff;
     padding: 15px 0;
+    border-bottom: 4px solid #ffb703;
 }
 
 .nav-container {
@@ -44,331 +34,146 @@ header {
 .logo {
     font-size: 1.5rem;
     font-weight: 800;
-    color: var(--primary-green);
-    letter-spacing: 0.5px;
 }
 
 .logo span {
-    display: block;
-    font-size: 0.8rem;
-    color: #666;
-    font-weight: 600;
+    color: #ffb703;
 }
 
-.btn-call {
-    background: var(--primary-green);
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 6px;
+.contact-top a {
+    color: #ffb703;
     text-decoration: none;
-    font-weight: 700;
-    transition: 0.2s;
+    font-weight: bold;
 }
 
-.btn-call:hover {
-    background: var(--dark-green);
-}
-
+/* Hero */
 .hero {
-    background: var(--light-green);
-    padding: 70px 0;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
 }
 
-.hero-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    align-items: center;
-}
-
-.hero-text h1 {
-    font-size: 2.8rem;
-    color: var(--text-dark);
+.hero h2 {
+    font-size: 2.5rem;
     margin-bottom: 20px;
-    line-height: 1.2;
 }
 
-.hero-text p {
+.hero p {
     font-size: 1.1rem;
-    color: #555;
-    margin-bottom: 30px;
+    max-width: 700px;
+    margin: 0 auto 30px auto;
 }
 
-.hero-btns {
+.hero-buttons {
     display: flex;
+    justify-content: center;
     gap: 15px;
 }
 
-.btn-primary {
-    background: var(--primary-green);
-    color: #fff;
+/* Buttons */
+.btn {
+    display: inline-block;
     padding: 12px 25px;
-    border-radius: 6px;
+    border-radius: 5px;
     text-decoration: none;
-    font-weight: 700;
-    border: none;
-    cursor: pointer;
-    transition: 0.2s;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: #ffb703;
+    color: #1b263b;
 }
 
 .btn-primary:hover {
-    background: var(--dark-green);
+    background: #fb8500;
+    color: white;
 }
 
 .btn-secondary {
-    background: transparent;
-    color: var(--primary-green);
-    border: 2px solid var(--primary-green);
-    padding: 12px 25px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 700;
-    transition: 0.2s;
+    background: #ffffff;
+    color: #1b263b;
 }
 
-.btn-secondary:hover {
-    background: var(--primary-green);
-    color: #fff;
+/* Services */
+.services {
+    padding: 60px 0;
 }
 
-.hero-img-box img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-}
-
-.how-it-works {
-    padding: 70px 0;
+.section-title {
     text-align: center;
-}
-
-.how-it-works h2 {
-    font-size: 2.2rem;
+    font-size: 2rem;
     margin-bottom: 40px;
-    color: var(--text-dark);
-}
-
-.steps-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-
-.step-card {
-    background: #fff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
-    border-top: 4px solid var(--primary-green);
-    text-align: left;
-    position: relative;
-}
-
-.step-num {
-    width: 35px;
-    height: 35px;
-    background: var(--primary-green);
-    color: #fff;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-.step-card h3 {
-    margin-bottom: 10px;
-    color: var(--text-dark);
-}
-
-.step-card p {
-    color: #666;
-}
-
-.services-section {
-    background: #fff;
-    padding: 70px 0;
-}
-
-.services-section h2 {
-    text-align: center;
-    font-size: 2.2rem;
-    margin-bottom: 40px;
+    color: #1b263b;
 }
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
 
-.service-box {
-    background: var(--bg-light);
+.service-card {
+    background: white;
     padding: 30px;
     border-radius: 8px;
-    border-left: 4px solid var(--primary-green);
-}
-
-.service-box h3 {
-    margin-bottom: 12px;
-    font-size: 1.2rem;
-}
-
-.service-box p {
-    color: #666;
-    font-size: 0.95rem;
-}
-
-.pricing-section {
-    padding: 70px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
     text-align: center;
 }
 
-.pricing-section h2 {
-    font-size: 2.2rem;
+.service-card i {
+    font-size: 2.5rem;
+    color: #ffb703;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
     margin-bottom: 10px;
+    color: #1b263b;
 }
 
-.section-subtitle {
-    color: #666;
-    margin-bottom: 40px;
-}
-
-.pricing-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-
-.price-card {
-    background: #fff;
-    padding: 40px 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.04);
-    position: relative;
-    border: 1px solid #eaeaea;
-}
-
-.price-card.popular {
-    border: 2px solid var(--primary-green);
-}
-
-.badge {
-    position: absolute;
-    top: -12px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: var(--primary-green);
-    color: #fff;
-    padding: 4px 12px;
-    font-size: 0.8rem;
-    border-radius: 20px;
-    font-weight: bold;
-}
-
-.price-card h3 {
-    font-size: 1.4rem;
-    margin-bottom: 15px;
-}
-
-.price {
-    font-size: 2rem;
-    font-weight: 800;
-    color: var(--primary-green);
-    margin-bottom: 15px;
-}
-
-.price-card p:not(.price) {
-    color: #666;
-    font-size: 0.95rem;
-}
-
+/* Contact Section */
 .contact-section {
-    background: #111;
-    color: #fff;
-    padding: 80px 0;
+    background: #e9ecef;
+    padding: 60px 0;
+    text-align: center;
 }
 
-.contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-    align-items: center;
+.contact-container {
+    max-width: 600px;
 }
 
-.contact-grid h2 {
-    font-size: 2.2rem;
-    margin-bottom: 15px;
-}
-
-.contact-grid p {
-    color: #aaa;
-    margin-bottom: 25px;
-}
-
-.company-info p {
-    color: #fff;
+.contact-container h2 {
+    color: #1b263b;
     margin-bottom: 10px;
 }
 
-.company-info a {
-    color: #81c784;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.form-box {
-    background: #1e1e1e;
-    padding: 35px;
-    border-radius: 8px;
-}
-
-.form-box h3 {
-    margin-bottom: 20px;
-}
-
-.quote-form {
+.contact-form {
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.quote-form input,
-.quote-form textarea {
+.form-group input,
+.form-group textarea {
+    width: 100%;
     padding: 12px;
-    border-radius: 6px;
-    border: 1px solid #333;
-    background: #2a2a2a;
-    color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     font-size: 1rem;
 }
 
-.quote-form input:focus,
-.quote-form textarea:focus {
-    outline: none;
-    border-color: var(--primary-green);
-}
-
+/* Footer */
 footer {
-    background: #0b0f0c;
-    color: #888;
+    background: #1b263b;
+    color: white;
     text-align: center;
     padding: 30px 0;
     font-size: 0.9rem;
 }
 
-.footer-content {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-@media (max-width: 768px) {
-    .hero-content, .contact-grid {
-        grid-template-columns: 1fr;
-    }
-    .hero-text h1 {
-        font-size: 2.2rem;
-    }
+footer p {
+    margin-bottom: 5px;
 }
